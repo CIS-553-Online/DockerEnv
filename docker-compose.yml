@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  cis553:
+    build: .
+    image: cis553
+    environment:
+      - TERM=xterm-256color
+    volumes:
+      - .:/home/cis553
