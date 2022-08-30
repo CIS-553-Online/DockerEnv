@@ -25,6 +25,14 @@ You will log into the container as user `cis553` with password `mcit`. The passw
 
 Files in your project directory will be accessible from both your host OS and from within the Docker container.  This will allow you to edit the files using an IDE (such as VS Code) on your host OS and run / compile your project from within the Docker container. 
 
+#### Note to M1 Mac users
+
+In some cases, the `docker-compose build cis553` command will throw an error.  This can be fixed by either:
+1. running `docker compose build cis553` (no '-' between docker and compose) or
+2. In the Docker Desktop General Preferences, select `Use Docker Compose V2`
+
+More information can be found at: https://docs.docker.com/desktop/mac/apple-silicon/
+
 ### All Future Log-ins
 
 Just open your course projects folder, and run `docker-compose run --rm cis553`.
