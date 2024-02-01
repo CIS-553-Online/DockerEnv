@@ -30,6 +30,8 @@ apt-get install -y apt-transport-https apt-utils && \
 apt-get install -y man man-db manpages-posix manpages-dev manpages-posix-dev && \
 apt-get install -y libssl-dev && \
 apt-get install -y sudo && \
+apt-get install -y git-all && \
+apt-get install -y unzip && \
 rm -rf /var/lib/apt/lists/*
 
 RUN apt install -y g++-9 gcc-9
